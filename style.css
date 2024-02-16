@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:"Fredoka";
+    text-decoration: none;
+    list-style:none;
+    
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 6px 12%;
+
+}
+.logo img{
+    max-width: width 100%;
+    width: 150px;
+    height: auto;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+}
+.navlist a{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 25px;
+    transition: all .42s;
+}
+.navlist a:hover{
+    color: #f379A7;
+}
+.top-icon{
+    display: flex;
+    align-items: center;
+}
+.top-icon a{
+    color: #000;
+    font-size: 28px;
+    margin: 0 6px;
+    transition: all .42s;
+}
+.top-icon a:hover{
+    color: #f379A7;
+}
+#menu-icon{
+color: #000;
+font-size: 35px;
+z-index: 10001;
+cursor: pointer;
+display:flex;
+}
+/*home-section*/
+section{
+padding:60px 14%;
+}
+.home{
+    width:100%;
+    height:100vh;
+    background-color: #f9dde8;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 10rem;
+}
+.home-img{
+    position:relative;
+    width: 100%;
+    height: auto;
+}
+.home-img img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    animation-name: slide;
+    animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;   
+}
+@keyframes slide{
+    0%{
+        transform:translateY(0px)
+    }
+    50%{
+        transform:translateY(-15px)
+    }
+    0%{
+        transform:translateY(0px)
+    }
+}
+.home-text h1{
+    color: #0a0909;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1.16;
+    margin-bottom: 15px;
+}
+.home-text h4{
+    color: #0a0909;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.home-btn a{
+    display:inline-block;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #000;
+    padding: 15px 35px;
+    border-radius: 30px;
+    transition: all .42s;
+} 
+.home-btn a:hover{
+    background-color: #0dfefd;
+}
+.pro-text h6{
+    display:inline-block;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #000;
+    padding: 15px 35px;
+    border-radius: 30px;
+    transition: all .42s;
+}
+.pro-text h6:hover{
+    background-color: #0dfefd;
+}
+.deal{
+    width:100%;
+    height:100vh;
+    background-color: #f9dde8;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 6rem;
+}
+.deal-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.deal-img img{    
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    animation-name: slide;
+    animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;   
+}
+@keyframes slide{
+    0%{
+        transform:translateY(0px)
+    }
+    50%{
+        transform:translateY(-15px)
+    }
+    0%{
+        transform:translateY(0px)
+    }
+}
+.deal-text h1{
+    color: #0a0909;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1.16;
+    margin-bottom: 15px;
+}
+.deal-text h5{
+    color: #0a0909;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.pro-img{
+    position:relative;
+    width: 90%;
+    height: auto;
+}
+.pro-img img{
+    max-width: 90%;
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    animation-name: slide;
+    animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;   
+}
+@keyframes slide{
+    0%{
+        transform:translateY(-10px)
+    }
+    50%{
+        transform:translateY(-15px)
+    }
+    0%{
+        transform:translateY(-10px)
+}
+}
+.contact{
+    color: #0a0909;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    padding:0px 45px ;
+    background-color: #d7d7d7;
+}
